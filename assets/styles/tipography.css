@@ -1,0 +1,88 @@
+
+    
+/* Font dos titulos */
+@import url('https://db.onlinewebfonts.com/c/0ea703ebd22f7845ecae3c60413df0c8?family=Nothing+You+Could+Do+Bold');
+@font-face {font-family: "Nothing You Could Do";
+  src: url("https://db.onlinewebfonts.com/t/0ea703ebd22f7845ecae3c60413df0c8.eot");
+  src: url("https://db.onlinewebfonts.com/t/0ea703ebd22f7845ecae3c60413df0c8.eot?#iefix") format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/0ea703ebd22f7845ecae3c60413df0c8.woff2") format("woff2"),
+  url("https://db.onlinewebfonts.com/t/0ea703ebd22f7845ecae3c60413df0c8.woff") format("woff"),
+  url("https://db.onlinewebfonts.com/t/0ea703ebd22f7845ecae3c60413df0c8.ttf") format("truetype"),
+  url("https://db.onlinewebfonts.com/t/0ea703ebd22f7845ecae3c60413df0c8.svg#Nothing You Could Do Bold") format("svg");
+}
+/* Font cursive usei em alguns paragrafos */
+@import url('https://db.onlinewebfonts.com/c/60d781fbca075dc7f5f0e648af223f74?family=Kalam');
+@font-face {font-family: "Kalam";
+  src: url("https://db.onlinewebfonts.com/t/60d781fbca075dc7f5f0e648af223f74.eot");
+  src: url("https://db.onlinewebfonts.com/t/60d781fbca075dc7f5f0e648af223f74.eot?#iefix") format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/60d781fbca075dc7f5f0e648af223f74.woff2") format("woff2"),
+  url("https://db.onlinewebfonts.com/t/60d781fbca075dc7f5f0e648af223f74.woff") format("woff"),
+  url("https://db.onlinewebfonts.com/t/60d781fbca075dc7f5f0e648af223f74.ttf") format("truetype"),
+  url("https://db.onlinewebfonts.com/t/60d781fbca075dc7f5f0e648af223f74.svg#Kalam") format("svg");
+}
+/* Conversão de fontes : 1 Rem será igual a 10 pixels nesses 4 @media */
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  
+  body {
+    box-sizing: border-box;
+    background-color: var(--Cor-do-layout);
+   }
+
+
+/* paragrafos */
+
+p {
+font-size: 1.8rem;
+line-height: 2.3rem;
+font-family: 'Kalam', cursive;
+color: rgba(63, 63, 63, 0.849);
+letter-spacing: 0.17rem;
+line-height: 3.1rem;
+}
+
+
+
+
+
+
+/* Título Personalizados */
+
+.title-h1 {
+    font-size: 2.8rem;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: 800;    
+    color: #fff;
+    margin: 1rem 0;
+    padding: 2em 0
+}
+.title-h2 {    
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: 700;
+    padding: 0.7em 0;
+    font-size: 2.9rem;
+    line-height: 1.3em;        
+        
+}
+.title-h2-light {
+ 
+  font-family: 'Nothing You Could Do', cursive;
+  font-weight: 700;
+  padding: 0.7em 0;
+  font-size: 3rem;
+  line-height: 1.3em;    
+  letter-spacing: 0.2px;  
+  color: #fff;
+}
+
+
