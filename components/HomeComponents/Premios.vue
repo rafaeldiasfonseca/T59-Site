@@ -5,7 +5,7 @@
             <!--card 01-->
             <div class="card">
                 <div class="card__side card__side--front">
-                    <div class="card__picture card__picture--2">&nbsp;</div>
+                    <div class="card__picture card__picture--1">&nbsp;</div>
                     <h4 class="card__heading">
                         <span class="heading-span card__heading-span--2 center">1º Lugar</span>
                     </h4>
@@ -21,13 +21,13 @@
 
                     </div>
                 </div>
-                <div class="card__side card__side--back card__side--back-2">
+                <div class="card__side card__side--back card__side--back-1">
                     <div class="card__cta">
                         <div class="card___price-box">
-                            <p class="card__price-only">1º Lugar</p>
-                            <p class="card__price-value"></p>
+                            <p class="card__price-only Color_02">Somente</p>
+                            <p class="card__price-value Color_02">R$ 70,00</p>
                         </div>
-                        <a href="#" class="btn btn--white">Inscreva-se já!</a>
+                        <nuxt-link to="/inscreva-se" class="btn btn--white">Inscreva-se já</nuxt-link>
                     </div>                           
                     </div>                       
             </div>   
@@ -53,17 +53,17 @@
                 <div class="card__side card__side--back card__side--back-2">
                         <div class="card__cta">
                                 <div class="card___price-box">
-                                    <p class="card__price-only">1º Lugar</p>
-                                    <p class="card__price-value"></p>
+                                    <p class="card__price-only Color_02">Somente</p>
+                                    <p class="card__price-value Color_02">R$ 70,00</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Inscreva-se já!</a>
+                                <nuxt-link to="/inscreva-se" class="btn btn--white">Inscreva-se já</nuxt-link>
                             </div>  
                         </div>
                     </div>                            
             <!--card 03-->
             <div class="card">
                 <div class="card__side card__side--front">
-                    <div class="card__picture card__picture--2">&nbsp;</div>
+                    <div class="card__picture card__picture--3">&nbsp;</div>
                     <h4 class="card__heading">
                         <span class="heading-span card__heading-span--2">3º Lugar</span>
                     </h4>
@@ -75,21 +75,21 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card__side card__side--back card__side--back-2">
+                <div class="card__side card__side--back card__side--back-3">
                     <div class="card__cta">
                         <div class="card___price-box">
-                            <p class="card__price-only">Somente</p>
-                            <p class="card__price-value">R$1799,00</p>
+                            <p class="card__price-only Color_02">Somente</p>
+                            <p class="card__price-value Color_02">R$ 70,00</p>
                         </div>
-                        <a href="#" class="btn btn--white">Inscreva-se já!</a>
+                        <nuxt-link to="/inscreva-se" class="btn btn--white">Inscreva-se já</nuxt-link>
                     </div>     
                 </div>
             </div>
 
-               <!--card 01-->
+               <!--card 04-->
             <div class="card">
                 <div class="card__side card__side--front">
-                    <div class="card__picture card__picture--2">&nbsp;</div>
+                    <div class="card__picture card__picture--4">&nbsp;</div>
                     <h4 class="card__heading">
                         <span class="heading-span card__heading-span--2">4º Lugar</span>
                     </h4>
@@ -99,17 +99,15 @@
                             <li>Camisa do Evento</li>
                             <li>Kit Praia | Circuito 013</li>  
                         </ul>
-
-
                     </div>
                 </div>
-                <div class="card__side card__side--back card__side--back-2">
+                <div class="card__side card__side--back card__side--back-4">
                     <div class="card__cta">
                         <div class="card___price-box">
-                            <p class="card__price-only">Somente</p>
-                            <p class="card__price-value">R$699,00</p>
+                            <p class="card__price-only Color_02">Somente</p>
+                            <p class="card__price-value Color_02">R$ 70,00</p>
                         </div>
-                        <a href="#" class="btn btn--white">Compre agora!</a>
+                        <nuxt-link to="/inscreva-se" class="btn btn--white">Inscreva-se já</nuxt-link>
                     </div>                           
                     </div>                       
             </div> 
@@ -136,11 +134,42 @@ export default {
   grid-template-rows: auto; }
 
 
+
+
 .premios {
-  background-color: #f7f7f7;
-  padding: 20rem 0 65rem 0;
-  margin-top: -12rem; 
+  margin: 14rem;
+  margin-top: 55px; 
+  
   }
+@media (max-width: 700px) { 
+  .col-04{
+    display: grid;    
+    align-items: center;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    grid-row-gap: 40px;
+     max-width: 300px;
+  }
+  .premios{
+    max-width: 300px;
+    display: grid;    
+    align-items: center;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+   
+  }
+   .card {  
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  margin: 0 0;
+  height: 32rem; 
+  width: 300px;}}
+
+
 
   .card {  
   perspective: 150rem;
@@ -157,22 +186,40 @@ export default {
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.692); }
     .card__side--front {
+      
       background-color: #fff; }
-    .card__side--back {
+    .card__side--back {      
       transform: rotateY(180deg); }
+      /* Trazeira do Card */
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #313131, #000); }
-      .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #313131, #000); }
+         background-image: linear-gradient(to right bottom, rgba(17, 17, 17, 0.527),
+   rgba(0, 0, 0, 0.856)), url('~assets/imagens/card_primeiro_lugar.jpg');
+  background-size: cover;
+  background-position: 0;  } 
+  .card__side--back-2 {
+         background-image: linear-gradient(to right bottom, rgba(17, 17, 17, 0.527),
+   rgba(0, 0, 0, 0.856)), url('~assets/imagens/card_segundo_lugar.jpg');
+  background-size: cover;
+  background-position: 0;  } 
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #313131, #000); }
+         background-image: linear-gradient(to right bottom, rgba(17, 17, 17, 0.527),
+   rgba(49, 49, 49, 0.8)), url('~assets/imagens/card_terceiro_lugar.jpg');
+  background-size: cover;
+  background-position: 0; }
+      .card__side--back-4 {
+         background-image: linear-gradient(to right bottom, rgba(17, 17, 17, 0.527),
+   rgba(49, 49, 49, 0.8)), url('~assets/imagens/card_quarto_lugar.jpg');
+  background-size: cover;
+  background-position: 0; }
+
+
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
-  .card__picture {
+  .card__picture {    
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
@@ -180,14 +227,32 @@ export default {
     clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
+
+    /* Frente do card */
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730);}
-       /* url('') */
+     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.945),
+   rgba(0, 0, 0, 0.856)), url('~assets/imagens/card_primeiro_lugar.jpg');
+  background-size: cover;
+  background-position: 0;  } 
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #313131, #000);  } 
+     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.849),
+   rgba(0, 0, 0, 0.74)), url('~assets/imagens/card_segundo_lugar.jpg');
+  background-size: cover;
+  background-position: 0;  } 
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-  .card__heading {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.849),
+    rgba(0, 0, 0, 0.74)), url('~assets/imagens/card_terceiro_lugar.jpg');
+      background-size: cover;
+       background-position: 0;  } 
+      .card__picture--4 {
+     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.849),
+   rgba(0, 0, 0, 0.74)), url('~assets/imagens/card_quarto_lugar.jpg');
+   background-position: 0;}
+
+
+
+
+  .card__heading {    
     text-align: center;
     font-size: 2.8rem;
     font-weight: 300;
@@ -231,14 +296,17 @@ export default {
     width: 90%;
     text-align: center; }
   .card__price-box {
+    
     text-align: center;
     color: #fff;
     margin-bottom: 8rem; }
   .card__price-only {
+   
     font-size: 1.9rem;
     font-weight: bold;
     text-transform: uppercase; }
   .card__price-value {
+     line-height: 9rem;
     font-size: 6rem;
     font-weight: 100; 
     text-align: center;

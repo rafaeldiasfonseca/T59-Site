@@ -19,7 +19,7 @@ module.exports = {
       { rel: 'description', name: 'description', content: 'Circuito de Surf 013' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }     
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }     
        
     ]
   },    
@@ -61,7 +61,7 @@ module.exports = {
       url: 'http://www.t59enterprise.com.br/',
       title: 'Circuito de Surf 013 em Santos SP!',
       description: 'Inscreva-se Já!',
-      img: 'http://agenciakpax.com.br/wp-content/uploads/2019/03/circuito-de-surf-013.jpg',
+      img: 'http://agenciakpax.com.br/wp-content/uploads/2019/04/circuito-de-surf-013-em-santos.jpg',
       locale: 'ru_RU',
       twitter: '@UserName',
       themeColor: '#ThemeColor'

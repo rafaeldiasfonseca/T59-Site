@@ -2,17 +2,13 @@
 <div class="header-container">
   <header class="the-header">
     <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
-    <div class="logo">
+    <!-- <div class="logo">
       <nuxt-link to="/"><img width='65px' height="auto" src="~assets/imagens/t59enterprise_alternative_logo.svg"></nuxt-link>
-    </div>
+    </div> -->
     <div class="spacer"></div>
     <div class="navigation-items">
       <ul class="nav-list">
-        <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link></li>
-        <li class="nav-item"><nuxt-link to="/sobre">Sobre</nuxt-link></li>        
-        <li class="nav-item"><nuxt-link to="/inscreva-se">Inscreva-se</nuxt-link></li>
-         <li class="nav-item"><nuxt-link to="/admin">Pranchas</nuxt-link></li>        
-        <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/inscreva-se"></nuxt-link></li>      
     
       </ul>
     </div>
@@ -38,7 +34,9 @@ export default {
 }
 
 .the-header {
-  font-size: 1.3rem;
+  
+  font-family: 'kalam', cursive;
+  font-size: 2rem;
   width: 100%;
   position: fixed;
   height: 60px;
@@ -94,6 +92,13 @@ export default {
 .nav-item a:hover,
 .nav-item a:active,
 .nav-item a.nuxt-link-active {
-  color: red;
+  color: #111;
 }
+.btn {
+  border-radius: 100px;
+  padding: 12px 30px;
+  background: var(--Sucess);
+}
+
+
 </style>

@@ -4,31 +4,29 @@
     <div class="header__text-box">
         <div class="heading-primary">
           <div class="logo">
-           <nuxt-link to="/"><img class='img-responsive' width="102rem" heigh="auto" src="~assets/imagens/t59enterprise_alternative_logo.svg"></nuxt-link>
+           <nuxt-link to="/"><img class='logo-home' src="~assets/imagens/t59enterprise_alternative_logo.svg"></nuxt-link>
            </div>
-            <h1 class="title-h1-slide heading-primary--main"><b>Circuito de Surf 013</b></h1>
+            <h1 class="title-h1-slide heading-primary--main"><b>Circuito de Surf 013 </b></h1>
             <span class='heading-primary--sub'>2º Etapa</span>
         </div>                
         <nuxt-link to="/inscreva-se" class='btn btn--white btn--animated'>Você esta pronto?</nuxt-link>
     </div>     
-   </section>  
-     
-     
+   </section>      
    <About />
    <Inscricoes />
-   <Apoio />
+   <Premios />
    <VagasLimitadas />
-
-   <div class='container'>
+   <nuxt-link to="/inscreva-se" class='btn btn--animated inscreva-se-btn'>Inscreva-se</nuxt-link>
+   <!-- <div class='container'>
      <div class='blog'>
      <h2 class='title-h2 Color_01 center'>Fique por dentro das novidades!</h2>  
     </div>
    
        
       <PostList :posts="loadedPosts" />
-   </div>
+   </div> -->
       
-   
+   <Apoio />
    <footer>
      <div class='container'>
        <div class="logo-footer center">
@@ -60,7 +58,8 @@ export default {
     About,
     Inscricoes,
     Apoio,
-    VagasLimitadas
+    VagasLimitadas,
+   
   }, 
   computed: {
     loadedPosts() {
@@ -100,6 +99,7 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; 
+    
     }
 
     .header__text-box {
@@ -113,20 +113,44 @@ export default {
    .fullScreen-container{
      width: 100%;
    }
+
+   .inscreva-se-btn {
+     font-family: 'Kalam', cursive;
+     padding: 15px 30px;
+     border-radius: 100px;
+     position: fixed;
+     right: 50px;
+     top: 42px;
+     background: var(--Color_02);
+     color: var(--Color_01);
+   }
   
 .logo {
-  padding-bottom: 9em;
-  margin: -0 auto;
-  z-index: 999;
-  position: relative;
-  
+  padding-bottom: 8em;
+  margin: 0 auto;
+  z-index: 9;
+  position: relative;  
 }
 .logo nuxt-link {
   z-index: 20;
   text-decoration: none;
-  color: white;
-  
+  color: white;  
 }
+
+.logo-home {
+  margin: 0 auto;
+  width: 138px;
+  height: auto;
+}
+@media (max-width: 700px) { 
+.logo-home {
+  margin: 0 auto;
+  width: 82px;
+  height: auto;
+}
+.logo {
+  padding-bottom: 4.5em;
+  }}
 
 .featured-posts {
   display: flex;
@@ -140,6 +164,7 @@ export default {
 .inscreva-se{
   width: 100%;
   background-color: #111;
+ 
 }
 .title-h1-slide{
   font-size: 5rem;
@@ -180,6 +205,10 @@ export default {
 
 /* Mobile */
 @media (max-width: 700px) {  
+  .intro{
+    background-image: linear-gradient(to right bottom, rgba(17, 17, 17, 0.527),
+   rgba(49, 49, 49, 0.8)), url('~assets/imagens/circuito-de-surf-013_mobile.jpg');
+  }
   
     .header__text-box {
     width: 50em;     
@@ -192,9 +221,7 @@ export default {
   margin-top: -60px;
   height: 100vh;
   min-height: 100vh; /* Isso aqui serve pra imagem inicial carregar rápido */  
-  z-index: -1;
-  background-image: linear-gradient(to right bottom, rgba(17, 17, 17, 0.527),
-   rgba(49, 49, 49, 0.8)), url('~assets/imagens/7.jpg');
+  z-index: -1; 
   background-size: cover;
   background-position: top;
   /* clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); */

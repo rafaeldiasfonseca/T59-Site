@@ -61,7 +61,7 @@ export default {
    }
    .title-h2{
        max-width: 380px;
-       margin: 2em 0;
+       margin: 2em auto;
    }}
 
 

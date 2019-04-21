@@ -68,7 +68,7 @@ export default {
 
  
 .admin-auth-page {     
-  height: 100vh;
+  height: 104vh;
   background-image: linear-gradient(to right bottom, rgba(17, 17, 17, 0.527),
    rgba(49, 49, 49, 0.8)), url('~assets/imagens/2.jpg');
   background-size: cover;
@@ -78,6 +78,8 @@ export default {
   display: grid;
   justify-content: center;
   align-content: center;  
+  margin-top: -100px;
+  position: relative;
    }
 .auth-container {  
   height: 100%;  

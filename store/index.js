@@ -145,10 +145,28 @@ const createStore = () => {
         }        
       }
     },
+    // Adicionando cadastro de informacao no firebase
+    addCadastro(vuexContext, post) {
+      const cadastroUser = {
+        ...post,
+        updatedDate: new Date()
+      };
+      return this.$axios
+        .$post(
+          "https://t59enterprise.firebaseio.com/cadastro-users.json?auth=" +
+            vuexContext.state.token,
+          cadastroUser
+        )
+        .then(data => {
+          vuexContext.commit("addCadastro", { ...cadastroUser, id: data.name });
+        })
+        .catch(e => console.log(e));
+    },
     getters: {
       loadedPosts(state) {
         return state.loadedPosts;
       },
+      
       isAuthenticated(state) {
         return state.token != null;
       }

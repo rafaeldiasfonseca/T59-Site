@@ -11,9 +11,8 @@
       <ul
         class="nav-list"
         @click="$emit('close')">
-        <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link></li>
-        <li class="nav-item"><nuxt-link to="/sobre">Sobre</nuxt-link></li>
-        <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/">Home</nuxt-link></li>  
+        <li class="nav-item"><nuxt-link to="/inscreva-se">Inscreva-se</nuxt-link></li>        
       </ul>
     </div>
   </transition>
@@ -40,6 +39,7 @@ export default {
 }
 
 .sidenav-backdrop {
+  
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -51,7 +51,7 @@ export default {
 
 .sidenav {
   height: 100%;
-  width: 300px;
+  width: 260px;
   background-color: white;
   z-index: 10000;
   position: fixed;
@@ -83,11 +83,12 @@ export default {
 .nav-item a {
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 2.8rem;
+  font-family: 'Kalam', cursive;
 }
 
 .nav-item a:hover,
 .nav-item a:active {
-  color: red;
+  color: var(--Sucess);
 }
 </style>

@@ -1,20 +1,21 @@
 <template>
   <div>
-    <KNav />
-    <!-- <TheHeader @sidenavToggle="displaySidenav =!displaySidenav" />
+    
+    <TheHeader @sidenavToggle="displaySidenav =!displaySidenav" />
     <TheSidenav
       :show="displaySidenav"
-      @close="displaySidenav = false" /> -->
+      @close="displaySidenav = false" />
     <nuxt />
   </div>
 </template>
 
 <script>
-import KNav from '~/components/Navigation/KNav'
+import TheHeader from '~/components/Navigation/TheHeader'
+import TheSidenav from '~/components/Navigation/TheSidenav'
 
 export default {  
   components: {
-    KNav    
+    TheHeader, TheSidenav 
   },
   data() {
     return {

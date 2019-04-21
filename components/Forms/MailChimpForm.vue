@@ -10,53 +10,74 @@
 			<input type="text" placeholder="Nome" value="" name="FNAME" class="" id="mce-FNAME">					
 			<input type="text" placeholder="Sobrenome" value="" name="LNAME" class="" id="mce-LNAME">			
 		</div>
+    <!-- Endereço -->
+    <div class='form-01-columns'>	
+      <input type="text" placeholder="Endereço" value="" name="ADDRESS" class="required email" id="mce-EMAIL">      
+      
+    </div>	
+    <div class='form-02-columns'>	
+      <input type="phone" placeholder="Telefone" value="" name="PHONE" class="" id="mce-EMAIL">
+      <input type="text" placeholder="Cidade" value="" name="MMERGE7" class="" id="mce-MMERGE7">
+    </div>	
     <!-- Email e Idade -->
       <div class='form-02-columns'>		
         <input type="email" placeholder="Email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-        <input type="text" value="" placeholder="Idade" name="MMERG5" class="" id="mce-MMERGE5">		       
+        <input type="number" value="" placeholder="Idade" name="MMERGE7" class="" id="mce-MMERGE7">		       
       </div>
-		
+		<!-- RG -->
 		<div class="form-02-columns">			
-		<input type="text" placeholder="RG" value="" name="MMERGE7" class="" id="mce-MMERGE7">
-		<input type="text" value="" placeholder="CPF" name="MMERGE8" class="" id="mce-MMERGE8">
+      <input type="number" placeholder="RG" value="" name="MMERGE9" class="" id="mce-MMERGE9">
+      <input type="number" value="" placeholder="CPF" name="MMERGE10" class="" id="mce-MMERGE10">
 		</div>
 	<h2 class='title-h2-light'>Qual é a sua Categoria?</h2>
 	<div class='form-02-columns'>		
   
-
+  <!-- Categorias --> 
 	<div class="inputGroup">
-		<input type="radio" value="Categoria1" name="MMERGE6" id="mce-MMERGE6-1"><label for="mce-MMERGE6-1">Junior - Masc. Até 18 anos</label>
+		<input type="radio" value="Junior - Masc.Até 18 anos" name="MMERGE6" id="mce-MMERGE6-0"><label for="mce-MMERGE6-0">Junior - Masc. Até 18 anos</label>
 	</div>
 	<div class="inputGroup">
-		<input type="radio" value="Categoria2" name="MMERGE6" id="mce-MMERGE6-2"><label for="mce-MMERGE6-2">Junior - Fem. Até 18 anos</label>
+		<input type="radio" value="Junior - Fem. Até 18 anos" name="MMERGE6" id="mce-MMERGE6-1"><label for="mce-MMERGE6-1">Junior - Fem. Até 18 anos</label>
+	</div>
+  	<div class="inputGroup">
+		<input type="radio" value="Open Masc. 18 anos +" name="MMERGE6" id="mce-MMERGE6-2"><label for="mce-MMERGE6-2">Open Masc. 18 anos +</label>
+	</div>
+  	<div class="inputGroup">
+		<input type="radio" value="Open Fem. 18 anos +" name="MMERGE6" id="mce-MMERGE6-3"><label for="mce-MMERGE6-3">Open Fem. 18 anos +</label>
 	</div>
 	
 	<div class="inputGroup">
-		<input type="radio" value="Categoria3" name="MMERGE6" id="mce-MMERGE6-3"><label for="mce-MMERGE6-3">Profissional. 18 anos +</label>
+		<input type="radio" value="Pro Surf. 18 anos +" name="MMERGE6" id="mce-MMERGE6-4"><label for="mce-MMERGE6-4">Pro Surf. 18 anos +</label>
 	</div>
 	<div class="inputGroup">
-		<input type="radio" value="Categoria4" name="MMERGE6" id="mce-MMERGE6-4"><label for="mce-MMERGE6-4">Master Surf. 18 anos +</label>
+		<input type="radio" value="Master Surf. 35 anos +" name="MMERGE6" id="mce-MMERGE6-5"><label for="mce-MMERGE6-5">Master Surf. 35 anos +</label>
 	</div>
 	
 	<div class="inputGroup">
-		<input type="radio" value="Categoria5" name="MMERGE6" id="mce-MMERGE6-5"><label for="mce-MMERGE6-5">G.Master. 45 anos +</label>
+		<input type="radio" value="G.Master. 45 anos +" name="MMERGE6" id="mce-MMERGE6-6"><label for="mce-MMERGE6-6">G.Master. 45 anos +</label>
 	</div>
 	<div class="inputGroup">
-		<input type="radio" value="Categoria6" name="MMERGE6" id="mce-MMERGE6-6"><label for="mce-MMERGE6-6">Long Board</label>
-	</div></div>
+		<input type="radio" value="Long Board Masc. 18 anos +" name="MMERGE6" id="mce-MMERGE6-7"><label for="mce-MMERGE6-7">Long Board Masc. 18 anos +</label>
+	</div>
+  <div class="inputGroup">
+		<input type="radio" value="Long Board Fem. 18 anos +" name="MMERGE6" id="mce-MMERGE6-8"><label for="mce-MMERGE6-8">Long Board Fem. 18 anos +</label>
+	</div>
+  </div>
+  
+  <!-- Termos -->
+  <div class='termos'>
+    <input type="checkbox" value=""><a href='http://www.agenciakpax.com.br' target='_blank'>Concordo. Li e aceito os Termos de condições</a>   
+  </div>
 
 
 	  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ce92b1d60e9dce08295e908b6_de6b7e110b" tabindex="-1" value=""></div>
 </div>
-    <div class="clear"><input type="submit" style="font-size:1.5rem;" value="Eu estou Pronto" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+    <div class="clear"><input type="submit" style="font-size:1.5rem; text-align: center;" value="Eu estou Pronto" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
     
 </form>
  <!-- INICIO BOTAO BOLETO FACIL - NAO EDITAR -->
-<form action="https://www.boletobancario.com/boletofacil/integration/button/checkout.html" method="post">
-<input type="hidden" name="code" value="FD9F8502A2392189" />
-<input type="image" src="https://www.boletobancario.com/boletofacil/img/payment-buttons/button-box-medium.png" name="submit" alt="Pague com Boleto Banc&aacute;rio!" />
-</form>
+
 <!-- FINAL BOTAO BOLETO FACIL -->
 </div>
 
@@ -90,20 +111,25 @@ input {
 
   background-color: #fff;
   display: block;
-  margin: 10px 0;
+  margin: 0.5em 0;
   position: relative;
 }
 
 label{
 	text-align: left;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	font-weight: 300;
 	color: #ccc;
+}
+.form-01-columns {
+	display: grid;
+	grid-template-columns:  1fr;
+	
 }
 .form-02-columns {
 	display: grid;
 	grid-template-columns:  1fr 1fr;
-	grid-gap: 1.4em;
+	grid-column-gap: 2em;
 }
 .datefield {
 	display: grid;
@@ -209,6 +235,23 @@ label{
 	background-color: rgb(35, 165, 94);
 }
 
+.termos {
+  margin: 1.5em auto;  
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.termos a{
+  font-size: 1.7rem;
+  font-family: 'Kalam', cursive;
+  margin-left: 0.6em;  
+  color: #fff;
+  opacity: 0.8;
+}
+input [type=checkbox] select {
+  height: 10em;
+}
 
 code {
   background-color: #9AA3AC;
@@ -217,6 +260,10 @@ code {
 
 
 @media (max-width: 800px) {
+
+  label {
+    font-size: 1.5rem;
+  }
   
     .form-02-columns {
 	display: grid;

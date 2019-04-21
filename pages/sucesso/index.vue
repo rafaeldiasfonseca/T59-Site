@@ -1,11 +1,16 @@
  <template>
   <div class='sucess-page'>    
-    <h1 class='title-h1 center'><b class='center'>Ops, Ocorreu um erro!</b></h1>
-    <h2 class='title-h3 center'>Clique no botão abaixo para voltar para o site</h2>   
+    <h1 class='title-h1 center'><b class='center'>Parabens, falta pouco!</b></h1>
+    <h2 class='title-h3 center'>Aguarde nosso email com o boleto ou clique no icone baixo para gerar o seu boleto manualmente</h2>   
   
   <div class='center buttons-sucesso'>
-    <a class='btn btn--animated' href='/'>Voltar para o site</a>    
-     
+    <a class='btn btn--animated' href='/'>Voltar para o site</a>     
+      <div class='boleto'>
+                   <form action="https://www.boletobancario.com/boletofacil/integration/button/checkout.html" method="post">
+                    <input type="hidden" name="code" value="FD9F8502A2392189" />
+                    <input type="image" src="https://www.boletobancario.com/boletofacil/img/payment-buttons/button-box-medium.png" name="submit" alt="Pague com Boleto Banc&aacute;rio!" />
+                    </form>
+                </div>      
     </div>
   </div>
 </template>

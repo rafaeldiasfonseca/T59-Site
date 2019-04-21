@@ -2,7 +2,7 @@
     <div class='Cta-01'>
         <div class='vagas-limitadas container flex-col mg10'>        
         <h2 class='title-h2 Color_02 center'>Vagas restantes:</h2>
-      <span>114</span>
+      <span>128</span>
      <nuxt-link to="/inscreva-se" class='btn btn--white btn--animated'>Não vou perder</nuxt-link>
         </div>
     </div>
